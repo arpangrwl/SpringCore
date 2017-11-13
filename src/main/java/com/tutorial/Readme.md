@@ -35,6 +35,7 @@ Here we have used FileSystemResource which is one of the implementations of Reso
 
 **The Resource interface has many implementaions. Two mainly used are:**
 
+
 ```
 1)org.springframework.core.io.FileSystemResource:
               Loads the resource from underlying file system.
@@ -42,6 +43,7 @@ Here we have used FileSystemResource which is one of the implementations of Reso
 2)org.springframework.core.io.ClassPathResource:
               Loads the resource from classpath(shown below).
 ```
+
 Purpose of FileSystemResource is to provide the xml file with the given name from underlying file system to XmlBeanFactory.
 
 Now,  bfObj represents a Spring Container which has loaded the bean definitions from the beansconfig.xml file.
