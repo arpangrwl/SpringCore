@@ -55,6 +55,7 @@ At the second line,
 MyBean beanObj = (MyBean) bfObj.getBean("mybean");
 ```
 We are requesting from spring container a bean with id "mybean". BeanFactory will read bean definition of a bean with id "mybean" from beansconfig.xml file, instantiates it and return a reference to that. **Thus BeanFactory loads the beans lazily.**
+
 ---
 **Example2:**
 
