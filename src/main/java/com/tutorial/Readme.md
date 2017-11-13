@@ -19,8 +19,8 @@ The most important BeanFactory implementation is –org.springframework.beans.fa
 Constructor for XmlBeanFactory:
 
 XmlBeanFactory(Resource resource)
-
-Example1:
+---
+**Example1:**
 
 ```
 BeanFactory bfObj = new XmlBeanFactory(new FileSystemResource ("c:/beansconfig.xml"));
@@ -55,16 +55,16 @@ At the second line,
 MyBean beanObj = (MyBean) bfObj.getBean("mybean");
 ```
 We are requesting from spring container a bean with id "mybean". BeanFactory will read bean definition of a bean with id "mybean" from beansconfig.xml file, instantiates it and return a reference to that. **Thus BeanFactory loads the beans lazily.**
-
-Example2:
+---
+**Example2:**
 
 ```
 ClassPathResource resorce = new ClassPathResource ("beansconfig.xml");
 
 BeanFactory factory = new XmlBeanFactory(resource);
 ```
-
-Example3:
+---
+**Example3:**
 
 ```
 ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(
@@ -73,8 +73,8 @@ ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(
 // an ApplicationContext is also  a BeanFactory.
 BeanFactory factory = (BeanFactory) appContext;
 ```
-
-Example4:
+---
+**Example4:**
 
 ```
 BeanFactory factory = new XmlBeanFactory(new FileInputStream("beansconfig.xml"));???
