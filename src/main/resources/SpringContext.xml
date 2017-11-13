@@ -14,11 +14,24 @@
     <bean id="emp2" class="com.tutorial.Employee">
         <property name="name" value="Arpan"></property>
         <property name="empID" value="22"></property>
+        <constructor-arg ref="address"/>
     </bean>
 
     <bean id="address" class="com.tutorial.Address">
-        <property name="Street" value="Shyamnagar"></property>
+        <property name="Street"  value="Shyamnagar"></property>
         <property name="houseNo" value="51"></property>
+    </bean>
+
+    <!-- Constructor Setting up 1 -->
+    <bean id="addConst1" class="com.tutorial.Address">
+        <constructor-arg type="java.lang.String" value="Shyamnagar" />
+        <constructor-arg type="int" value="51"/>
+    </bean>
+
+    <!-- Constructor Setting up 2-->
+    <bean id="addConst2" class="com.tutorial.Address">
+        <constructor-arg index="0" value="Shyamnagar" />
+        <constructor-arg index="1" value="51"/>
     </bean>
 
 

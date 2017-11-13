@@ -8,20 +8,12 @@ public class Address {
     String Street;
     int houseNo;
 
-    public Address(String street, int houseNo) {
-        Street = street;
-        this.houseNo = houseNo;
-    }
-
     public Address() {
     }
 
-    @Override
-    public String toString() {
-        return "Address{" +
-                "Street='" + Street + '\'' +
-                ", houseNo=" + houseNo +
-                '}';
+    public Address(String street, int houseNo) {
+        Street = street;
+        this.houseNo = houseNo;
     }
 
     public String getStreet() {
@@ -38,5 +30,13 @@ public class Address {
 
     public void setHouseNo(int houseNo) {
         this.houseNo = houseNo;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "Street='" + Street + '\'' +
+                ", houseNo=" + houseNo +
+                '}';
     }
 }

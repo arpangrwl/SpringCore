@@ -17,6 +17,10 @@ public class Employee {
         this.address = address;
     }
 
+    public Employee(Address address){
+        this.address = address;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +

@@ -22,14 +22,32 @@ public class Client {
         Resource resource = new ClassPathResource("SpringContext.xml");
         BeanFactory factory = new XmlBeanFactory(resource);
 
-        Employee e1 = (Employee)factory.getBean("emp1");
+        Employee e1 = (Employee)factory.getBean("emp2");
 
         System.out.println(e1);
 
 
+        /*----------------------------
+         <!-- Constructor Setting up  -->
+         <bean id="addConst" class="com.tutorial.Address">
+            <constructor-arg type="java.lang.String" value="Shyamnagar" />
+            <constructor-arg type="int" value="51"/>
+         </bean>
+         -----------------------------*/
         ApplicationContext context = new ClassPathXmlApplicationContext("SpringContext.xml");
-      //  Employee e2 = (Employee)context.getBean("emp2");
-     //   System.out.println(e2);
+        Address address = (Address)context.getBean("addConst1");
+        System.out.println(address);
 
+
+        /*----------------------------
+
+    <bean id="addConst2" class="com.tutorial.Address">
+        <constructor-arg index="0" value="Shyamnagar" />
+        <constructor-arg index="1" value="51"/>
+    </bean>
+        ---------------------------- */
+        ApplicationContext context1 = new ClassPathXmlApplicationContext("SpringContext.xml");
+        Address address1 = (Address)context.getBean("addConst2");
+        System.out.println(address1);
     }
 }
