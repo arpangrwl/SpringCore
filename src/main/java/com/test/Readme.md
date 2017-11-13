@@ -1,5 +1,0 @@
-
-
-Spring Core tutorial 
----------------------
-

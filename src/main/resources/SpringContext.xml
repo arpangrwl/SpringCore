@@ -7,17 +7,16 @@
     <!-- Based on the id passed in the TestEmployeeByUsingBeanFactory corresponding
         bean gets executed -->
 
-    <bean id="emp1" class="com.test.Employee">
+    <bean id="emp1" class="com.tutorial.Employee">
 
     </bean>
 
-    <bean id="emp2" class="com.test.Employee">
+    <bean id="emp2" class="com.tutorial.Employee">
         <property name="name" value="Arpan"></property>
         <property name="empID" value="22"></property>
-        <property name="empID" value="22"></property>
     </bean>
 
-    <bean id="address" class="com.test.Address">
+    <bean id="address" class="com.tutorial.Address">
         <property name="Street" value="Shyamnagar"></property>
         <property name="houseNo" value="51"></property>
     </bean>

@@ -1,4 +1,4 @@
-package com.test;
+package com.tutorial;
 
 
 import org.springframework.beans.factory.BeanFactory;

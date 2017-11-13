@@ -1,4 +1,4 @@
-package com.test;
+package com.tutorial;
 
 /**
  * Created by Arpan on 11/12/17.
