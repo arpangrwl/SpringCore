@@ -79,7 +79,7 @@ BeanFactory factory = (BeanFactory) appContext;
 **Example4:**
 
 ```
-BeanFactory factory = new XmlBeanFactory(new FileInputStream("beansconfig.xml"));???
+BeanFactory factory = new XmlBeanFactory(new FileInputStream("beansconfig.xml"));
 ```
 
 Note: BeanFactory is not recomended for use in latest Spring versions. It is there only for backward compatability. ApplicationContext is preferred over this because ApplicationContext provides more advance level features which makes an application enterprise level application.
