@@ -19,6 +19,7 @@ The most important BeanFactory implementation is –org.springframework.beans.fa
 Constructor for XmlBeanFactory:
 
 XmlBeanFactory(Resource resource)
+
 ---
 **Example1:**
 
